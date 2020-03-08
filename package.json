@@ -1,0 +1,8 @@
+{
+  "name": "habidoist",
+  "version": "0.0.1",
+  "description": "Utilities for synchronizing Habitica and Todoist",
+  "repository": "git@github.com:Gvozd/habidoist.git",
+  "author": "Gvozd <gvozdev.viktor@gmail.com>",
+  "license": "MIT"
+}
