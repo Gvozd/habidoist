@@ -4,5 +4,8 @@
   "description": "Utilities for synchronizing Habitica and Todoist",
   "repository": "git@github.com:Gvozd/habidoist.git",
   "author": "Gvozd <gvozdev.viktor@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
 }
