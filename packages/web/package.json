@@ -1,7 +1,25 @@
 {
-  "name": "web",
+  "name": "@habidoist/web",
   "version": "0.1.0",
-  "private": true,
+  "author": "Gvozd <gvozdev.viktor@gmail.com>",
+  "homepage": "https://github.com/habidoist/habidoist",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habidoist/habidoist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/habidoist/habidoist/issues"
+  },
+  "description": "Web application for synchronizing Habitica and Todoist",
+  "keywords": [
+    "habitica",
+    "habitrpg",
+    "habit",
+    "todoist",
+    "todo",
+    "sync"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
