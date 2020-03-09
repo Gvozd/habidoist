@@ -595,7 +595,7 @@ module.exports = function(webpackEnv) {
             basedir: paths.appNodeModules,
           }),
           async: isEnvDevelopment,
-          useTypescriptIncrementalApi: false,
+          useTypescriptIncrementalApi: true,
           checkSyntacticErrors: true,
           resolveModuleNameModule: process.versions.pnp
             ? `${__dirname}/pnpTs.js`
