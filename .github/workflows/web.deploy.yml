@@ -1,0 +1,19 @@
+name: Web DeployCI
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+      - run: yarn
+      - run: yarn run build
+        working-directory: packages/web
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.5.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: packages/web/build
