@@ -27,6 +27,8 @@ jobs:
           key: ${{ runner.os }}-build-cache
       - run: yarn run build
         working-directory: packages/web
+        env:
+          GENERATE_SOURCEMAP: false
       # publish
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3.5.1
