@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/habidoist/precache-manifest.16b918438532340e8c0514b64c51e17f.js"
+  "/habidoist/precache-manifest.0ec7a7efce19734d30f782cc1c7d23e4.js"
 );
 
 self.addEventListener('message', (event) => {

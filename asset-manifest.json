@@ -1,23 +1,19 @@
 {
   "files": {
-    "main.css": "/habidoist/static/css/main.5f361e03.chunk.css",
+    "main.css": "/habidoist/static/css/main.bfd9321d.chunk.css",
     "main.js": "/habidoist/static/js/main.a6561bad.chunk.js",
-    "main.js.map": "/habidoist/static/js/main.a6561bad.chunk.js.map",
     "runtime-main.js": "/habidoist/static/js/runtime-main.e41abc24.js",
-    "runtime-main.js.map": "/habidoist/static/js/runtime-main.e41abc24.js.map",
     "static/js/2.a5dd82a5.chunk.js": "/habidoist/static/js/2.a5dd82a5.chunk.js",
-    "static/js/2.a5dd82a5.chunk.js.map": "/habidoist/static/js/2.a5dd82a5.chunk.js.map",
     "index.html": "/habidoist/index.html",
-    "precache-manifest.16b918438532340e8c0514b64c51e17f.js": "/habidoist/precache-manifest.16b918438532340e8c0514b64c51e17f.js",
+    "precache-manifest.0ec7a7efce19734d30f782cc1c7d23e4.js": "/habidoist/precache-manifest.0ec7a7efce19734d30f782cc1c7d23e4.js",
     "service-worker.js": "/habidoist/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/habidoist/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.a5dd82a5.chunk.js.LICENSE.txt": "/habidoist/static/js/2.a5dd82a5.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/habidoist/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e41abc24.js",
     "static/js/2.a5dd82a5.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
+    "static/css/main.bfd9321d.chunk.css",
     "static/js/main.a6561bad.chunk.js"
   ]
 }
