@@ -7,8 +7,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # prepare
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
+      # dependencies
       - name: Cache node modules
         uses: actions/cache@v1
         with:
@@ -17,9 +19,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - run: yarn install --frozen-lockfile
+      # build
+      - name: Cache build
+        uses: actions/cache@v1
+        with:
+          path: packages/web/node_modules/.cache
+          key: ${{ runner.os }}-build-cache
       - run: yarn run build
         working-directory: packages/web
-      - name: Deploy
+      # publish
+      - name: Publish
         uses: peaceiris/actions-gh-pages@v3.5.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
