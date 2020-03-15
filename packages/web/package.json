@@ -48,6 +48,7 @@
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
     "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-react-app": "^5.2.0",
     "eslint-loader": "3.0.3",
     "eslint-plugin-flowtype": "4.6.0",
@@ -106,7 +107,11 @@
     "*.(ts|tsx|js|jsx)": "yarn lint:commit"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "eslint-config-airbnb",
+      "react-app",
+      "./config/eslint"
+    ]
   },
   "browserslist": {
     "production": [
