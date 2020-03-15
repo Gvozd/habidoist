@@ -1,2 +1,6 @@
 # production
 /build
+
+# temp disable
+/config
+/scripts
