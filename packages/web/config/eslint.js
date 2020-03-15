@@ -1,5 +1,6 @@
 const deepExtend = require('deep-extend');
 const style = require('eslint-config-airbnb-base/rules/style');
+const imports = require('eslint-config-airbnb-base/rules/imports');
 
 module.exports = {
   settings: {
@@ -17,6 +18,20 @@ module.exports = {
       mjs: 'never',
       jsx: 'never',
     }],
+    'import/no-extraneous-dependencies': [
+      2,
+      deepExtend(
+        {},
+        imports.rules['import/no-extraneous-dependencies'][1],
+        {
+          devDependencies: imports.rules['import/no-extraneous-dependencies'][1].devDependencies
+            .concat([
+              'config/**',
+              'scripts/**',
+            ]),
+        },
+      ),
+    ],
 
     'react/jsx-filename-extension': [2, {
       extensions: ['.jsx', '.tsx'],
@@ -30,7 +45,7 @@ module.exports = {
         {},
         style.rules['spaced-comment'][2],
         {
-          line: {markers: ['=', '!', '/']},
+          line: { markers: ['=', '!', '/'] },
         },
       ),
     ],
