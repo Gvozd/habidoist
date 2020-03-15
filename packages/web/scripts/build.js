@@ -18,6 +18,8 @@ const path = require('path');
 const chalk = require('react-dev-utils/chalk');
 const fs = require('fs-extra');
 const webpack = require('webpack');
+const paths = require('../config/paths');
+const configFactory = require('../config/webpack.config');
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
 const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 const printHostingInstructions = require('react-dev-utils/printHostingInstructions');
@@ -46,8 +48,6 @@ const config = configFactory('production');
 // browserslist defaults.
 const { checkBrowsers } = require('react-dev-utils/browsersHelper');
 
-const paths = require('../config/paths');
-const configFactory = require('../config/webpack.config');
 
 checkBrowsers(paths.appPath, isInteractive)
   .then(() =>
