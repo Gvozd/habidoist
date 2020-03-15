@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a13e14afc340b998d41b54d56ed37be4",
+    "revision": "c8f140cfb42857fd864bb39a8f55ee09",
     "url": "/habidoist/index.html"
   },
   {
-    "revision": "2d9dbd7f1ac66b7f688a",
+    "revision": "06b065ba8e4e8a20226d",
     "url": "/habidoist/static/css/main.bfd9321d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/habidoist/static/js/2.514d6788.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d9dbd7f1ac66b7f688a",
-    "url": "/habidoist/static/js/main.c01d23da.chunk.js"
+    "revision": "06b065ba8e4e8a20226d",
+    "url": "/habidoist/static/js/main.6f94c92c.chunk.js"
   },
   {
     "revision": "064e975ece1072431cbc",
